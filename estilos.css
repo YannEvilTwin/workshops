@@ -68,7 +68,7 @@
         header {
             text-align: center;
             /* Nuevo padding: Menos espacio arriba y abajo */
-            padding: 20px 20px 30px;
+            /* padding: 20px 20px 30px; */
             background: linear-gradient(180deg, #f3e8ff 0%, var(--bg-color) 100%);
         }
 
