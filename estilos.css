@@ -79,12 +79,6 @@
             display: block;
         }
 
-        @media (max-width: 480px) {
-            .logo-header {
-                height: 150px;
-            }
-        }
-
         h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
@@ -377,12 +371,6 @@
             line-height: 1.2;
         }
 
-        .about-text p {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 15px;
-        }
-
         /* Ajuste para mobile */
         @media (max-width: 768px) {
             .about-grid {
@@ -496,6 +484,13 @@
 
             .community-card {
                 padding: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-header {
+                height: 150px;
+                /* Reducir el tamaño del logo para que haya más espacio lateral */
             }
         }
 
