@@ -28,6 +28,12 @@
             overflow-x: hidden;
         }
 
+        html,
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
         /* --- UTILITIES --- */
         .container {
             max-width: 1000px;
@@ -64,6 +70,19 @@
             /* Nuevo padding: Menos espacio arriba y abajo */
             padding: 20px 20px 30px;
             background: linear-gradient(180deg, #f3e8ff 0%, var(--bg-color) 100%);
+        }
+
+        .logo-header {
+            height: 200px;
+            width: auto;
+            margin: 0 auto 10px auto;
+            display: block;
+        }
+
+        @media (max-width: 480px) {
+            .logo-header {
+                height: 150px;
+            }
         }
 
         h1 {
