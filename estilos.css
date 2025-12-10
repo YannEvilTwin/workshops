@@ -371,16 +371,41 @@
             line-height: 1.2;
         }
 
-        /* Ajuste para mobile */
         @media (max-width: 768px) {
+
+            /* 1. Soluciona el apilamiento y el centrado de la imagen en móvil */
             .about-grid {
                 grid-template-columns: 1fr;
+                /* Fuerza 1 columna para que la foto se apile sobre el texto */
                 text-align: center;
+                /* Centra el contenido del grid (incluida la foto) */
+                gap: 30px;
+                /* Reducir la separación vertical entre foto y texto */
+            }
+
+            .about-img-container {
+                /* Aseguramos que el contenedor de la imagen no tenga un ancho raro */
+                display: block;
+                margin: 0 auto;
             }
 
             .profile-pic {
-                width: 200px;
-                height: 200px;
+                /* Asegura que la imagen sea centrable */
+                margin: 0 auto;
+            }
+
+            /* 2. Soluciona la falta de margen lateral del texto */
+            .about-text {
+                text-align: left;
+                /* El texto largo debe ir a la izquierda para mejor lectura */
+                /* Añadimos un padding/margen lateral interno de refuerzo: */
+                padding: 0 10px;
+            }
+
+            /* 3. Centramos los títulos para el look and feel de la captura de pantalla */
+            .about-text h3,
+            .about-text h2 {
+                text-align: center;
             }
         }
 
